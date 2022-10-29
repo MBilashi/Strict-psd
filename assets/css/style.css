@@ -1,0 +1,291 @@
+/*===================================
+    - Template Name: STRICT | Bootstrap | landing page PSD to HTML
+    - Author: Mst. Monia Bilashi Moni
+    - Version: 
+    - Website: 
+=====================================*/
+
+
+
+
+/* =======================================
+   Start Universal Secletor or common css 
+   ======================================= */
+*{
+    padding: 0;
+    margin: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a, a:hover{
+    text-decoration:none;
+    color: black;
+}
+img{
+    vertical-align: middle;
+}
+:root{
+    --primary:#f6f9f9;
+    --secondary:#48baff;
+    --third:#5fc3ff;
+    --fourth:#2cacf8;
+    --fifth:#2c374b;
+    --sixth:#15a4fa;
+    --contact_overlay:#2d3950;
+}
+h1, h2, h3,h4,h5,h6{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+p,a{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+img,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+/*=================================================
+     End Universal Secletor 
+  ================================================== */
+
+  /* Top Header Menu Bar section CSS Start */
+  .top_header{
+    background: var(--primary);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  .logo{
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+    gap: 20px;
+  }
+  .logo a{
+    font-size: 25px;
+  }
+  .navbar{
+    padding: 26px 0;
+  }
+  .nav-item{
+    padding:0px 10px ;
+  }
+  .nav-item .nav-link {
+    font-weight: 700;
+    transition: .7s;
+    text-transform: uppercase;
+  }
+  .nav-item .nav-link:hover{
+    color: var(--fifth);
+  }
+  /* Top Header Menu Bar section CSS End */
+
+  /* Hero part CSS Start */
+  .hero_part{
+    background:url('../image/hero_banner.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+  }
+
+.hero_main{
+    width: 100%;
+    margin: auto;
+}
+.carsole_one{
+  text-align: center;
+  font-weight: 700;
+  width: 60%;
+  margin: auto;
+}
+.carsole_one h1{
+  padding-top: 195px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 95px;
+  border-bottom: 2px solid var(--sixth);
+  margin-bottom: 25px;
+}
+.carsole_one p{
+  font-size: 25px;
+}
+.carsole_one .hero_call{
+  width: 150px;
+  height: 40px;
+  display: block;
+  margin: auto;
+  line-height: 40px;
+  background:var(--hero_a) ;
+  color: #fff;
+  border: 1px solid var(--sixth);
+  transition: .4s;
+}
+.carsole_one .hero_call:hover{
+  background: var(--fourth);
+}
+.carsole_one .down_arrey{
+  font-size: 25px;
+  padding-top: 110px;
+  padding-bottom: 20px;
+}
+  /* Hero part CSS End */
+
+  /* simple and pure design section CSS start  */
+  .simple_part{
+    background: var(--primary);
+  }
+  .simple_part_main{
+    width: 75%;
+    margin: auto;
+  }
+  .simple-p{
+    font-size: 50px;
+  }
+  /* simple and pure design section CSS end  */
+
+  /*features part CSS Start  */
+  .features_main p{
+    font-size: 14px;
+  }
+    .features_main_cont{
+      flex-direction: column;
+      align-items: center;
+    }
+    .image {
+      width: 90px;
+      height: 90px;
+      background: var(--third);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient( to right ,#48baff 50%, #5fc3ff 50%);
+    }
+   
+  /*features part CSS End  */
+
+/* Our Latest Part CSS Start  */
+.our_letest_work{
+  background: var(--primary);
+}
+.our_latest_work_part_header_P{
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+}
+.work_main{
+  position: relative;
+}
+.work_main .work_main_image{
+  width: 100%;
+
+}
+.work_main .work_main_image img{
+  width: 100%;
+}
+.work_main_overlay{
+  width: 100%;
+  height: 100%;
+  /* background: var(--fourth); */
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  opacity: .6;
+  background: transparent;
+  transition: .7s;
+  
+}
+.work_main_overlay i{
+  border: 1px solid white;
+  padding: 8px;
+  color: #fff;
+  display: none;
+  transition: .7s;
+}
+.work_main_image:hover .work_main_overlay{
+  background: var(--fourth) !important;
+}
+.work_main_image:hover .work_main_overlay i{
+  display: block;
+}
+/* Our Latest Part CSS End  */
+
+  /* contact part CSS Start  */
+  .contact{
+    background: url('../image/contact_form_image.png') no-repeat center;
+    background-size: cover;
+  }
+ .contact_overlay{
+  width: 100%;
+  height: 100%;
+  background: var(--contact_overlay);
+  opacity: .8;
+ }
+ .contact_main_p{
+  font-size: 50px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+ }
+ .contact_form{
+  width: 50%;
+  margin: auto;
+ }
+ .form-control{
+  background-color: transparent;
+  border-radius: 0px;
+  border-color: var(--primary);
+ }
+ .btn-primary{
+  background: transparent;
+  padding: 5px 30px;
+  border-radius: 0;
+  float: right;
+ }
+ .contact_form form textarea{
+  width: 100%;
+ }
+  /* contact part CSS End  */
+
+
+  /* Bottom Footer CSS Part Start  */
+  .btm_footer{
+    background: var(--primary);
+  }
+  .btm_footer_main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .btm_footer_right a i{
+    background: var(--sixth);
+    padding: 5px 8px;
+    color: #fff;
+  }
+  /* Bottom Footer CSS Part End  */
